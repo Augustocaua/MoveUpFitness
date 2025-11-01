@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { toast } from "@/hooks/use-toast";
+import fitnessIcon from "@/assets/fitness-icon.png";
 
 const LeadForm = () => {
   const [formData, setFormData] = useState({
@@ -38,8 +39,9 @@ const LeadForm = () => {
     <section id="lead-form" className="py-24 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto text-center mb-12">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6">
-            🚀 Comece agora seu <span className="text-primary">novo estilo de vida</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 flex items-center justify-center gap-4">
+            <img src={fitnessIcon} alt="Fitness" className="w-12 h-12 md:w-16 md:h-16" />
+            Comece agora seu <span className="text-primary">novo estilo de vida</span>
           </h2>
           <p className="text-lg md:text-xl text-foreground/80">
             Preencha abaixo e receba um plano de treino gratuito de avaliação.
