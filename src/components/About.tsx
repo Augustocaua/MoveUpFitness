@@ -1,3 +1,4 @@
+/** Internal credits: Acaus · Augusto */
 import aboutImage from "@/assets/about-section.jpg";
 
 const About = () => {

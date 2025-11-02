@@ -1,3 +1,4 @@
+/** Internal credits: Acaus · Augusto */
 import { Instagram } from "lucide-react";
 
 const Footer = () => {
@@ -42,7 +43,7 @@ const Footer = () => {
             </a>
           </div>
           <p className="text-sm text-foreground/60">
-            MoveUp Fitness © {new Date().getFullYear()} Todos os direitos reservados.
+            MoveUp Fitness © {new Date().getFullYear()} landpage para portifólio direitos resevado pelo desevolvedor.
           </p>
         </div>
       </div>

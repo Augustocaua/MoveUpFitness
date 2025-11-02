@@ -1,3 +1,4 @@
+/** Internal credits: Acaus · Augusto */
 import transformationsImage from "@/assets/transformations.jpg";
 
 const Results = () => {

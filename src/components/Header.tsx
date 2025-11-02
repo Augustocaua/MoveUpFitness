@@ -1,3 +1,4 @@
+/** Internal credits: Acaus · Augusto */
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
