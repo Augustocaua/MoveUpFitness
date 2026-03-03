@@ -53,7 +53,7 @@ const LeadForm = () => {
 
         <form
           onSubmit={handleSubmit}
-          className="max-w-xl mx-auto bg-card border border-border rounded-2xl p-8 shadow-2xl"
+          className="max-w-xl mx-auto bg-card border border-border rounded-2xl p-4 md:p-8 shadow-2xl"
         >
           <div className="space-y-6">
             <div>
@@ -101,9 +101,16 @@ const LeadForm = () => {
               </select>
             </div>
 
-            <Button type="submit" variant="hero" size="lg" className="w-full">
-              🔥 Quero meu plano gratuito agora!
-            </Button>
+            <div className="w-full flex justify-center">
+              <Button 
+                type="submit" 
+                variant="hero" 
+                size="lg" 
+                className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-full h-auto min-h-[56px] py-4 px-4 md:py-5 md:px-8 rounded-xl whitespace-normal break-words text-center flex items-center justify-center text-[14px] md:text-lg font-bold leading-tight shadow-lg hover:shadow-xl transition-all hover:scale-[1.02] normal-case tracking-normal"
+              >
+                🔥 Quero meu plano gratuito agora!
+              </Button>
+            </div>
           </div>
         </form>
       </div>

@@ -1,6 +1,17 @@
 /** Internal credits: Acaus · Augusto */
+import { Button } from "@/components/ui/button";
 
 const Hero = () => {
+  const scrollToForm = () => {
+    const form = document.getElementById("lead-form");
+    form?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToResults = () => {
+    const results = document.getElementById("results");
+    results?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
       {/* Background Video */}
@@ -33,6 +44,24 @@ const Hero = () => {
           <br />
           Transforme sua rotina e descubra o melhor de você.
         </p>
+
+        <div className="flex flex-col sm:flex-row gap-4 w-full justify-center animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <Button
+            size="lg"
+            className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 h-auto w-full sm:w-auto animate-pulse-slow shadow-[0_0_20px_rgba(255,107,0,0.5)] hover:shadow-[0_0_30px_rgba(255,107,0,0.8)] transition-all duration-300"
+            onClick={scrollToForm}
+          >
+            👉 Quero meu treino personalizado
+          </Button>
+          <Button
+            variant="outline"
+            size="lg"
+            className="border-white text-white hover:bg-white/10 text-lg px-8 py-6 h-auto w-full sm:w-auto backdrop-blur-sm"
+            onClick={scrollToResults}
+          >
+            💪 Ver resultados
+          </Button>
+        </div>
       </div>
     </section>
   );
